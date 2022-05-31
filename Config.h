@@ -65,7 +65,7 @@
 #define PEC_SENSE_STATE              HIGH //   HIGH, Senses the PEC signal rising edge or use LOW for falling edge.           Adjust
                                           //         Ignored in ALTAZM mode.
 
-#define PPS_SENSE                      OFF //    OFF, ON* enables PPS (pulse per second,) senses signal rising edge.           Option
+#define PPS_SENSE                      ON //    OFF, ON* enables PPS (pulse per second,) senses signal rising edge.           Option
                                           //         Better tracking accuracy especially for Mega2560's w/ceramic resonator.
 
 // ST4 INTERFACE --------------------------------------------- see https://onstep.groups.io/g/main/wiki/Configuration-Controller#ST4
@@ -205,12 +205,12 @@
 #define AXIS5_DRIVER_IHOLD            OFF //    OFF, n, (mA.) Current standstill. OFF uses IRUN/2.0.                  "       Option
 #define AXIS5_DRIVER_IRUN             OFF //    OFF, n, (mA.) Current tracking, appropriate for stepper/driver/etc.   "       Option
 #define AXIS5_DRIVER_POWER_DOWN        ON //    OFF, ON Powers off the motor at stand-still.                                  Option
-#define AXIS5_DRIVER_REVERSE          OFF //    OFF, ON Reverses movement direction, or reverse wiring instead to correct.    Option
+#define AXIS5_DRIVER_REVERSE           ON //    OFF, ON Reverses movement direction, or reverse wiring instead to correct.    Option
 #define AXIS5_DRIVER_DC_MODE          OFF //    OFF, DRV8825 for pwm dc motor control on stepper driver outputs.              Option
 
 #define AXIS5_LIMIT_MIN_RATE           50 //     50, n. Where n=1..1000 (um/s.) Minimum microns/second. In DC mode, min pwr.  Adjust
 #define AXIS5_LIMIT_MIN                 0 //      0, n. Where n=0..500 (millimeters.) Minimum allowed position.               Adjust
-#define AXIS5_LIMIT_MAX                50 //     50, n. Where n=0..500 (millimeters.) Maximum allowed position.               Adjust
+#define AXIS5_LIMIT_MAX                45 //     50, n. Where n=0..500 (millimeters.) Maximum allowed position.               Adjust
 
 // AUXILIARY FEATURE CONTROL ------------------------------ see https://onstep.groups.io/g/main/wiki/6-ConfigurationMaster#AUXILIARY
 // For additional infrequently used _PURPOSE options see Constants.h "various auxillary features"
@@ -219,12 +219,12 @@
 #define FEATURE1_PURPOSE       DEW_HEATER //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
 #define FEATURE1_TEMP              DS1820 //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
 #define FEATURE1_PIN              Fan1Pin //    OFF, AUX, DS2413, n. Where n is ds2413 s/n (gpio0) or n=0 to 255 (pin#.)      Adjust
-#define FEATURE1_DEFAULT_VALUE         ON //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
+#define FEATURE1_DEFAULT_VALUE        OFF //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
 #define FEATURE2_NAME             "GUIDE" // "FE..", Name of feature being controlled.                                        Adjust
 #define FEATURE2_PURPOSE       ANALOG_OUT //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
 #define FEATURE2_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
 #define FEATURE2_PIN              Fan2Pin //    OFF, AUX, CHAIN (ds2413 gpio1,) n. Where n=0 to 255 (pin#.)                   Adjust
-#define FEATURE2_DEFAULT_VALUE        255 //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
+#define FEATURE2_DEFAULT_VALUE          0 //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
 #define FEATURE3_NAME          "INTERVAL" // "FE..", Name of feature being controlled.                                        Adjust
 #define FEATURE3_PURPOSE   INTERVALOMETER //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
 #define FEATURE3_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
