@@ -110,7 +110,7 @@
 weather ambient;
 
 #if SERIAL_B_ESP_FLASHING == ON || defined(AddonTriggerPin)
-  #include "src/lib/flashAddon.h"
+  #include "src/lib/FlashAddon.h"
   flashAddon fa;
 #endif
 

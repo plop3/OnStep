@@ -61,7 +61,7 @@
 #define LIMIT_SENSE                   ON_PULLUP //    OFF, ON* limit sense switch close to Gnd stops gotos and/or tracking.         Option
 #define LIMIT_SENSE_STATE             LOW //    LOW, For NO (normally open) switches, HIGH for NC (normally closed.)          Adjust
 
-#define PEC_SENSE                     OFF //    OFF, ON*, n, sense digital OR n=0 to 1023 (0 to 3.3V or 5V) analog threshold. Option
+#define PEC_SENSE                      ON //    OFF, ON*, n, sense digital OR n=0 to 1023 (0 to 3.3V or 5V) analog threshold. Option
 #define PEC_SENSE_STATE              HIGH //   HIGH, Senses the PEC signal rising edge or use LOW for falling edge.           Adjust
                                           //         Ignored in ALTAZM mode.
 
@@ -221,10 +221,10 @@
 #define FEATURE1_PIN              Fan1Pin //    OFF, AUX, DS2413, n. Where n is ds2413 s/n (gpio0) or n=0 to 255 (pin#.)      Adjust
 #define FEATURE1_DEFAULT_VALUE         ON //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
 #define FEATURE2_NAME             "GUIDE" // "FE..", Name of feature being controlled.                                        Adjust
-#define FEATURE2_PURPOSE       ANALOG_OUT //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
-#define FEATURE2_TEMP                 255 //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
+#define FEATURE2_PURPOSE           SWITCH //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
+#define FEATURE2_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
 #define FEATURE2_PIN              Fan2Pin //    OFF, AUX, CHAIN (ds2413 gpio1,) n. Where n=0 to 255 (pin#.)                   Adjust
-#define FEATURE2_DEFAULT_VALUE          0 //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
+#define FEATURE2_DEFAULT_VALUE        OFF //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
 #define FEATURE3_NAME          "INTERVAL" // "FE..", Name of feature being controlled.                                        Adjust
 #define FEATURE3_PURPOSE   INTERVALOMETER //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
 #define FEATURE3_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
