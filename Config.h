@@ -230,11 +230,11 @@
 #define FEATURE3_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
 #define FEATURE3_PIN              Fan0Pin //    OFF, AUX, DS2413, n. Where n is ds2413 s/n (gpio0) or n=0 to 255 (pin#.)      Adjust
 #define FEATURE3_DEFAULT_VALUE        OFF //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
-#define FEATURE4_NAME           "ALIM12V" // "FE..", Name of feature being controlled.                                        Adjust
+#define FEATURE4_NAME           "ALIM19V" // "FE..", Name of feature being controlled.                                        Adjust
 #define FEATURE4_PURPOSE           SWITCH //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
 #define FEATURE4_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
 #define FEATURE4_PIN                  PE2 //    OFF, AUX, CHAIN (ds2413 gpio1,) n. Where n=0 to 255 (pin#.)                   Adjust
-#define FEATURE4_DEFAULT_VALUE        OFF //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
+#define FEATURE4_DEFAULT_VALUE         ON //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.                            Adjust
 #define FEATURE5_NAME          "FEATURE5" // "FE..", Name of feature being controlled.                                        Adjust
 #define FEATURE5_PURPOSE              OFF //    OFF, SWITCH, ANALOG_OUT, DEW_HEATER, etc.                                     Option
 #define FEATURE5_TEMP                 OFF //    OFF, DS1820, n. Where n is the ds18b20 s/n for DEW_HEATER temperature.        Adjust
