@@ -192,7 +192,7 @@
 
 #define AXIS4_LIMIT_MIN_RATE          100 //     50, n. Where n=1..1000 (um/s.) Minimum microns/second. In DC mode, min pwr.  Adjust
 #define AXIS4_LIMIT_MIN                 0 //      0, n. Where n=0..500 (millimeters.) Minimum allowed position.               Adjust
-#define AXIS4_LIMIT_MAX                45 //     50, n. Where n=0..500 (millimeters.) Maximum allowed position.               Adjust
+#define AXIS4_LIMIT_MAX                35 //     50, n. Where n=0..500 (millimeters.) Maximum allowed position.               Adjust
 
 // AXIS5 FOCUSER 2
 // see https://onstep.groups.io/g/main/wiki/Configuration-Rotator-and-Focusers#AXIS5
